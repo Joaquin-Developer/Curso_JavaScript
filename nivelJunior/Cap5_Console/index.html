@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5 - Consola en JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        // console.dir(new Date());    // muestra información del objeto que recibe de parámetro
+        
+        /**
+         * Ejercicio de práctica del úso de la consola. :
+         * backticks: ``
+        */
+
+        let materias = {
+            tallerMantenimiento: [],
+            programacion: [],
+            basesDeDatos: [],
+            sistemas: [],
+            formacionEmpresarial: [],
+            gestionProyectos: [],
+            ada:[]
+        }
+
+        function asistencia() {
+
+            for (materia in materias) {
+                let asistencia = materias[materia];
+                if (asistencia >= 90) {
+                    console.log(`%cAprobado ${materia}`, "")
+                }
+
+            }
+
+        }
+        
+    </script>
+
+</body>
+</html>

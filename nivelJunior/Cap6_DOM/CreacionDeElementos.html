@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo1">Hola me llamo <b>Joaquín</b></p>
+    <p id="parrafo2">Mi <span>Apellido</span> es <b>Parrilla</b></p>
+    <div class="listaElementos">
+
+    </div>
+
+    <script>
+
+        let parrafo2 = document.getElementById("parrafo2");
+        const listaElementos = document.querySelector(".listaElementos");
+        /**
+         * Obtención de los datos del elemento:
+         */
+        console.log(parrafo2.textContent);  // texto del elemento (sin el código html)
+        console.log(parrafo2.innerHTML);    // retorna unicamente el codigo html dentro del elemento
+        console.log(parrafo2.outerHTML);    // codigo HTML del elemento completo
+        /**
+         * creacion de elementos html desde js:
+         */
+        //const element = document.createElement("LI");   // creamos un elemento
+        //const texto = document.createTextNode("Este texto irá dentro del li");   // creamos un nodo de texto
+        //element.appendChild(texto); // al elemento "element" le agregamos un nodo "hijo", el cua será el nodo de texto
+        //console.log("");
+        //console.log(element);   // mostramos en la consola el html del elemento padre
+        //listaElementos.appendChild(element);    // al elemento listaObjetos, le agregamos como nodo el elemento "element"
+
+        /**
+         * Realizar lo mismo, pero de una forma mejor para ahorrar recursos:
+         */
+        
+        const fragmento = document.createDocumentFragment();
+
+        const item = document.createElement("LI");
+        item.innerHTML = "Este texto irá dentro del Li";
+        fragmento.appendChild(item);
+
+        listaElementos.appendChild(fragmento);
+
+        // console.log(listaElementos.firstElementChild);  // primer elemento hijo del elemento indicado
+        // console.log(listaElementos.lastElementChild);    // ultimo elemento hijo
+        
+    </script>
+
+</body>
+</html>

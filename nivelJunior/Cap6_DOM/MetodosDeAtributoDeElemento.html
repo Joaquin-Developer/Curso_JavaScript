@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Definir, Obtener y Eliminar elementos</title>
+    <style>
+        body {
+            color: 222;
+            font-family: sans-serif;
+        }
+        
+        .textoGrande {
+            font-size: 60px;
+            color: #a22;
+            background-color: #433;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">Este es mi TÍTULO</h1>
+
+    <input type="range" class="rangoEdades">
+    <label>Rango de edadeds</label>
+    <br>
+    <br>
+    <button id="btnCambiarTipo">Cambiar tipo de Input</button>
+    <br>
+    <br>
+    <button id="btnRemoveAttribute">Eliminar atributo</button>
+    <br>
+    <br>
+    <button id="btnEditTitleProperties">Editar titulo</button>
+    <button id="btnDefaultTitleProperties">Dejar titulo predeterminado</button>
+    <br>
+    <br>
+
+    btnDefaultTitleProperties
+    <script>
+
+        const rangoEdades = document.querySelector(".rangoEdades");
+        const title = document.querySelector(".title");
+
+        document.getElementById("btnCambiarTipo").addEventListener("click", function() {
+            switch (rangoEdades.getAttribute("type")) {
+                case "range" :
+                    rangoEdades.setAttribute("type", "number");
+                    console.log(rangoEdades);
+                break;
+                case "number" :
+                    rangoEdades.setAttribute("type", "range");
+                    console.log(rangoEdades);
+                break;
+                default:
+                    rangoEdades.setAttribute("type", "range");
+                    console.log("%cDEFAULT", "color: red;");
+                    console.log(rangoEdades);
+                    break;
+            }
+        });
+
+        document.getElementById("btnRemoveAttribute").addEventListener("click", function() {
+            rangoEdades.removeAttribute("type");
+            console.log(rangoEdades);
+        });
+
+        document.getElementById("btnEditTitleProperties").addEventListener("click", function() {
+            
+            title.setAttribute("contenteditable", "true");  // boolean
+
+            // añadimos una clase:
+            title.classList.add("textoGrande");
+
+        });
+
+        document.getElementById("btnDefaultTitleProperties").addEventListener("click", function() {
+            title.classList.remove("textoGrande")
+        });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+PRACTICOS POR HACER: 
+Actualizado al dia (25-nov - 23:37)
+
+- Cofla 4 (Cadenas, Arrays, Math)
+- Cofla 5 (Ejercicio con consola)
+- Cofla 6 (Ejercicio completo: "Llaves")
