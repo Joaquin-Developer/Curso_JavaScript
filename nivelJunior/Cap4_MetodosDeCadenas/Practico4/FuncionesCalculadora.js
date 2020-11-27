@@ -1,5 +1,5 @@
 
-const divResult = document.getElementById("result");
+const divResult = document.getElementById("resultDiv");
 
 function getNumberA() {
     return parseInt(document.getElementById("numA").value);
@@ -12,19 +12,23 @@ function getNumberB() {
 document.getElementById("btnSuma").addEventListener("click", function() {
 
     const suma = getNumberA() + getNumberB();
-    console.log(suma);
 
+    const lastChild = document.getElementById("result");
+    const resultElem = document.createElement("P");
+    resultElem.id = "result"
+    resultElem.classList.add("resultSum");  // css file class
+    resultElem.appendChild(document.createTextNode(`La suma de ${getNumberA()} y ${getNumberB()} es ${suma}`));
 
-    
+    if (lastChild !== null) {
+        // si el div tiene un child, lo eliminamos
+        divResult.removeChild(lastChild);
+    }
 
-    const fragmento = document.createDocumentFragment();
+    divResult.appendChild(resultElem);
+        
 
-    const item = document.createElement("LI");
-    item.innerHTML = "Este texto irá dentro del Li";
-    fragmento.appendChild(item);
-
-    listaElementos.appendChild(fragmento);
-
+    //resultELem.appendChild(parag)
+    //divResult.innerHTML = "resultElem";
 
 
 });
