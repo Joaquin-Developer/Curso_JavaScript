@@ -52,7 +52,7 @@ document.getElementById("btnProducto").addEventListener("click", function() {
 
 document.getElementById("btnDivision").addEventListener("click", function() {
 
-    showResultInPage("*", `La división de ${getNumberA()} y ${getNumberB()} es 
+    showResultInPage("/", `La división de ${getNumberA()} y ${getNumberB()} es 
         ${getNumberA() / getNumberB()}`, "resultDiv");
 });
 
@@ -72,12 +72,12 @@ document.getElementById("btnSqrtNumB").addEventListener("click", function() {
 });
 
 document.getElementById("btnCbrtNumA").addEventListener("click", function() {
-    showResultInPage("sqrt", `La raíz cública de ${getNumberA()} es 
+    showResultInPage("cbrt", `La raíz cública de ${getNumberA()} es 
         ${Math.cbrt(getNumberA())}`, "resultCbrt");        
 });
 
 document.getElementById("btnCbrtNumB").addEventListener("click", function() {
-    showResultInPage("sqrt", `La raíz cública de ${getNumberB()} es 
+    showResultInPage("cbrt", `La raíz cública de ${getNumberB()} es 
         ${Math.cbrt(getNumberB())}`, "resultCbrt");        
 });
 
