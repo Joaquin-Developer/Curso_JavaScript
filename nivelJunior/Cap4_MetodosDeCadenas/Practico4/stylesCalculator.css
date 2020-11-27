@@ -1,5 +1,5 @@
 
-.rsultGeneric {
+.resultGeneric {
     font-size: 20px;
 }
 
@@ -8,25 +8,25 @@
 }
 
 .resultRest {
-
+    color: rgb(238, 13, 13);
 }
 
 .resultDiv {
-
+    color: rgb(141, 1, 134);
 }
 
 .resultProd {
-
+    color: rgb(30, 99, 9);
 }
 
 .resultExp {
-
+    color: deeppink;
 }
 
 .resultSqrt {
-
+    color: teal;
 }
 
-.resultPow {
-
+.resultCbrt {
+    color: darkgoldenrod;
 }
