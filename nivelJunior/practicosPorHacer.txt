@@ -7,8 +7,11 @@ Actualizado al dia (25-nov - 23:37)
 
 
 Ejercicio 4: Cadenas, Arrays, Math:
+-------------------------------------------------------------------------------------------------------------------------
+Problema A)
+Aplicación web para Calcular potencias, raiz cuadrada, raiz cúbica, sumas, restas, multiplicación, división
 
-
+Problema B)
 
 
 
@@ -19,10 +22,11 @@ Ejercicio 4: Cadenas, Arrays, Math:
 
 
 Ejercicio 5: Consola
-
+-------------------------------------------------------------------------------------------------------------------------
 
 
 Ejercicio 6: Ejercicio completo - "Llaves"
+-------------------------------------------------------------------------------------------------------------------------
 
 
 
