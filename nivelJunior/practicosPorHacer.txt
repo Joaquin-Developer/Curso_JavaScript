@@ -1,25 +1,8 @@
 PRACTICOS POR HACER: 
-Actualizado al dia (25-nov - 23:37)
+Actualizado al dia (01-dic - 16:20)
 
-- Cofla 4 (Cadenas, Arrays, Math)
 - Cofla 5 (Ejercicio con consola)
 - Cofla 6 (Ejercicio completo: "Llaves")
-
-
-Ejercicio 4: Cadenas, Arrays, Math:
--------------------------------------------------------------------------------------------------------------------------
-Problema A)
-Aplicación web para Calcular potencias, raiz cuadrada, raiz cúbica, sumas, restas, multiplicación, división
-
-Problema B)
-
-
-
-
-
-
-
-
 
 Ejercicio 5: Consola
 -------------------------------------------------------------------------------------------------------------------------
