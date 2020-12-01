@@ -1,18 +1,10 @@
 PRACTICOS POR HACER: 
-Actualizado al dia (01-dic - 16:20)
+Actualizado al dia (01-dic - 19:12)
 
-- Cofla 5 (Ejercicio con consola)
 - Cofla 6 (Ejercicio completo: "Llaves")
-
-Ejercicio 5: Consola
--------------------------------------------------------------------------------------------------------------------------
-
 
 Ejercicio 6: Ejercicio completo - "Llaves"
 -------------------------------------------------------------------------------------------------------------------------
-
-
-
 
 
 
